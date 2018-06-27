@@ -64,16 +64,28 @@ console.log(data)
 }
     */
 
+
    fetch('https://free.currencyconverterapi.com/api/v5/currencies')
    .then((response) => response.json()) // Transform the data into json
    .then((response) => {
     console.log('OK');
     let from = document.getElementById("from");
+    let to = document.getElementById("to");
     Object.entries(response.results).forEach(([key, value]) => {
-        console.log(value);
-        let option = new Option(`${value.currencyName} (${value.currencySymbol})`, key);
-        from.add(option);
+        let fromOption = new Option(`${value.currencyName} (${value.currencySymbol})`, key);
+        let toOption = new Option(`${value.currencyName} (${value.currencySymbol})`, key);
+        from.add(fromOption);
+        to.add(toOption);
     });
+
+    from.onchange = (event) => {
+        console.log(event.target.value)
+    };
+
+    to.onchange = (event) => {
+        console.log(event.target.value)
+    };
+
    });
 
 
