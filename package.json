@@ -1,0 +1,25 @@
+{
+  "name": "super_currency_converter",
+  "version": "1.0.0",
+  "description": "A project to complete google africa challenge scholarship.It is about creating a currency converter in javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achiengcindy/super_currency_converter.git"
+  },
+  "keywords": [
+    "fetchAPI",
+    "cacheAPI",
+    "serviceWorker",
+    "currencyconverter"
+  ],
+  "author": "Cindy Achieng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/achiengcindy/super_currency_converter/issues"
+  },
+  "homepage": "https://github.com/achiengcindy/super_currency_converter#readme"
+}
